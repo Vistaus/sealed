@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sealed.brennoflavio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-29 17:42+0000\n"
+"POT-Creation-Date: 2026-03-29 20:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -573,35 +573,35 @@ msgstr ""
 msgid "Edit Login"
 msgstr ""
 
-#: ../qml/lib/CustomFieldsList.qml:10
-msgid "Custom Fields"
-msgstr ""
-
-#: ../qml/lib/CustomFieldsList.qml:15 ../qml/lib/CustomFieldsList.qml:25
+#: ../qml/lib/CustomFieldsList.qml:16 ../qml/lib/CustomFieldsList.qml:32
 msgid "No"
 msgstr ""
 
-#: ../qml/lib/CustomFieldsList.qml:15 ../qml/lib/CustomFieldsList.qml:25
+#: ../qml/lib/CustomFieldsList.qml:16 ../qml/lib/CustomFieldsList.qml:32
 msgid "Yes"
 msgstr ""
 
-#: ../qml/lib/CustomFieldsList.qml:17
+#: ../qml/lib/CustomFieldsList.qml:20
 msgid "Linked: Username"
 msgstr ""
 
-#: ../qml/lib/CustomFieldsList.qml:18
+#: ../qml/lib/CustomFieldsList.qml:23
 msgid "Linked: Password"
 msgstr ""
 
-#: ../qml/lib/CustomFieldsList.qml:19
+#: ../qml/lib/CustomFieldsList.qml:25
 msgid "Linked field"
 msgstr ""
 
-#: ../qml/lib/CustomFieldsList.qml:33
+#: ../qml/lib/CustomFieldsList.qml:37
+msgid "Custom Fields"
+msgstr ""
+
+#: ../qml/lib/CustomFieldsList.qml:44
 msgid "(unnamed)"
 msgstr ""
 
-#: ../qml/lib/CustomFieldsList.qml:40
+#: ../qml/lib/CustomFieldsList.qml:51
 msgid "Field"
 msgstr ""
 
