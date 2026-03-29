@@ -86,7 +86,8 @@ Page {
                 "expiryMonth": pwd.expiry_month || "",
                 "expiryYear": pwd.expiry_year || "",
                 "code": pwd.code || "",
-                "favorite": pwd.favorite || false
+                "favorite": pwd.favorite || false,
+                "fields": pwd.fields || []
             };
         })
         showSearchBar: true
@@ -127,7 +128,8 @@ Page {
                     "created": item.created || "",
                     "updated": item.updated || "",
                     "favorite": item.favorite || false,
-                    "isTrashed": true
+                    "isTrashed": true,
+                    "fields": item.fields || []
                 });
                 else if (itemType === "card")
                     pageStack.push(Qt.resolvedUrl("PasswordCardPage.qml"), {
@@ -143,7 +145,8 @@ Page {
                     "created": item.created || "",
                     "updated": item.updated || "",
                     "favorite": item.favorite || false,
-                    "isTrashed": true
+                    "isTrashed": true,
+                    "fields": item.fields || []
                 });
             }
         }

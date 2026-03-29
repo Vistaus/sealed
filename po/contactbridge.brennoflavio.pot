@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the contactbridge.brennoflavio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: contactbridge.brennoflavio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-09 02:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/AddServerPage.qml:32 ../qml/Main.qml:146
+msgid "Add Server"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:52
+msgid "Save"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:60
+msgid "Server URL"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:61
+msgid "https://example.com/caldav"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:63
+msgid "Please enter a valid URL (e.g., https://example.com)"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:71
+msgid "Username"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:72
+msgid "Enter your username"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:80
+msgid "Password"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:81
+msgid "Enter your password"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:88
+msgid "Please fill all fields"
+msgstr ""
+
+#: ../qml/AddServerPage.qml:125
+msgid "Connecting to server..."
+msgstr ""
+
+#: ../qml/ConfigurationPage.qml:30
+msgid "Configuration"
+msgstr ""
+
+#: ../qml/ConfigurationPage.qml:56
+msgid "Updating background sync settings..."
+msgstr ""
+
+#: ../qml/ConfigurationPage.qml:64
+msgid "Failed to update background sync settings"
+msgstr ""
+
+#: ../qml/ConfigurationPage.qml:88
+msgid "General"
+msgstr ""
+
+#: ../qml/ConfigurationPage.qml:91
+msgid "Background sync"
+msgstr ""
+
+#: ../qml/ConfigurationPage.qml:92
+msgid "Install Systemd Timer for background updates"
+msgstr ""
+
+#: ../qml/ConfigurationPage.qml:101
+msgid "Crash logs"
+msgstr ""
+
+#: ../qml/ConfigurationPage.qml:102
+msgid "Send anonymous crash reports"
+msgstr ""
+
+#: ../qml/Main.qml:73 contactbridge.desktop.in.h:1
+msgid "Contact Bridge"
+msgstr ""
+
+#: ../qml/Main.qml:119
+msgid "Sync Servers"
+msgstr ""
+
+#: ../qml/Main.qml:133
+msgid "Unknown sync error"
+msgstr ""
+
+#: ../qml/Main.qml:180
+msgid "Syncing servers..."
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:38
+msgid "Server Details"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:64
+msgid "Address Books"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:71
+msgid "Unnamed Address Book"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:83
+msgid "No address books found"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:97 ../qml/ServerDetailsPage.qml:282
+msgid "Delete Server"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:111
+msgid "Sync Logs"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:136
+msgid "Unknown Address Book"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:145
+msgid "Last sync:"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:151
+msgid "Never"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:161
+msgid "Type:"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:167
+msgid "Unknown"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:177
+msgid "Status:"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:183
+msgid "Failed"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:183
+msgid "Success"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:207
+msgid "Show less"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:207
+msgid "Show more"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:237
+msgid "No sync logs available"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:253
+msgid "Loading server details..."
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:259
+msgid "Updating address book..."
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:265
+msgid "Deleting server..."
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:283
+msgid "This will remove the Addressbooks from your device. Are you sure?"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:286
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:291
+msgid "Delete"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:313
+msgid "Error loading server details"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:319
+msgid "No server ID provided"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:327
+msgid "Invalid server ID"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:338
+msgid "Failed to load server details"
+msgstr ""
+
+#: ../qml/ServerDetailsPage.qml:366
+msgid "Failed to delete server"
+msgstr ""
+
+#: ../qml/lib/AppHeader.qml:37
+msgid "Back"
+msgstr ""
+
+#: ../qml/lib/AppHeader.qml:52
+msgid "Settings"
+msgstr ""
+
+#: ../qml/lib/Card.qml:115
+msgid "%1 items"
+msgstr ""
+
+#: ../qml/lib/Card.qml:115
+msgid "%1 items • %2"
+msgstr ""
+
+#: ../qml/lib/CardList.qml:51
+msgid "No servers"
+msgstr ""
+
+#: ../qml/lib/Form.qml:24
+msgid "Submit"
+msgstr ""
+
+#: ../qml/lib/Gallery.qml:103
+msgid "No images to display"
+msgstr ""
+
+#: ../qml/lib/InputField.qml:29
+msgid "Invalid input"
+msgstr ""

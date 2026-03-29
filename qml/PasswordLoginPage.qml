@@ -36,6 +36,7 @@ Page {
     property bool isTrashed: false
     property string folderId: ""
     property string folderName: ""
+    property var fields: []
 
     signal backRequested()
 
@@ -118,6 +119,11 @@ Page {
                     }
                 }
 
+            }
+
+            CustomFieldsList {
+                fields: passwordLoginPage.fields
+                onCopyClicked: passwordLoginPage.copyToClipboard(value, fieldName)
             }
 
             ConfigurationGroup {

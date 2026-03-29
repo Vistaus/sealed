@@ -135,6 +135,27 @@ def bitwarden_delete_folder(
     return BitwardenClientResponse(success=True, data="")
 
 
+@dataclass
+class BitwardenField:
+    name: str
+    value: str
+    type: int
+    linked_id: Optional[int] = None
+
+
+def _parse_fields(item: Dict) -> List["BitwardenField"]:
+    raw_fields = item.get("fields") or []
+    return [
+        BitwardenField(
+            name=f.get("name") or "",
+            value=f.get("value") or "",
+            type=f.get("type", 0),
+            linked_id=f.get("linkedId"),
+        )
+        for f in raw_fields
+    ]
+
+
 class BitwardenItemType(StrEnum):
     LOGIN = "login"
     SECURE_NOTE = "secure_note"
@@ -179,6 +200,7 @@ class BitwardenItem:
     raw: Dict
     folder_id: str
     folder_name: str
+    fields: List["BitwardenField"]
 
 
 def bitwarden_list_items(
@@ -212,6 +234,7 @@ def bitwarden_list_items(
         item_expiry_month = item.get("card", {}).get("expMonth")
         item_expiry_year = item.get("card", {}).get("expYear")
         item_code = item.get("card", {}).get("code")
+        fields = _parse_fields(item)
         found_folder_id = item.get("folderId", "")
         folder = [x for x in folders if x.id == found_folder_id]
         if folder:
@@ -240,6 +263,7 @@ def bitwarden_list_items(
                 raw=item,
                 folder_id=found_folder_id,
                 folder_name=folder_name,
+                fields=fields,
             )
         )
 
@@ -265,6 +289,7 @@ def bitwarden_get_item(session_code: str, item_id: str) -> BitwardenItem:
     item_expiry_month = item.get("card", {}).get("expMonth")
     item_expiry_year = item.get("card", {}).get("expYear")
     item_code = item.get("card", {}).get("code")
+    fields = _parse_fields(item)
     item_folder_id = item.get("folderId", "")
 
     if item_folder_id:
@@ -297,6 +322,7 @@ def bitwarden_get_item(session_code: str, item_id: str) -> BitwardenItem:
         raw=item,
         folder_id=item_folder_id,
         folder_name=folder_name,
+        fields=fields,
     )
 
 

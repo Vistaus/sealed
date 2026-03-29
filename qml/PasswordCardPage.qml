@@ -40,6 +40,7 @@ Page {
     property bool isTrashed: false
     property string folderId: ""
     property string folderName: ""
+    property var fields: []
 
     signal backRequested()
 
@@ -134,6 +135,11 @@ Page {
                     onCopyClicked: copyToClipboard(code, i18n.tr("Security Code"))
                 }
 
+            }
+
+            CustomFieldsList {
+                fields: passwordCardPage.fields
+                onCopyClicked: passwordCardPage.copyToClipboard(value, fieldName)
             }
 
             ConfigurationGroup {

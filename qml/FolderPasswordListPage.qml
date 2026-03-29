@@ -87,7 +87,8 @@ Page {
                 "code": pwd.code || "",
                 "favorite": pwd.favorite || false,
                 "folderId": pwd.folder_id || "",
-                "folderName": pwd.folder_name || ""
+                "folderName": pwd.folder_name || "",
+                "fields": pwd.fields || []
             };
         })
         showSearchBar: true
@@ -129,7 +130,8 @@ Page {
                     "updated": item.updated || "",
                     "favorite": item.favorite || false,
                     "folderId": item.folderId || "",
-                    "folderName": item.folderName || ""
+                    "folderName": item.folderName || "",
+                    "fields": item.fields || []
                 });
                 else if (itemType === "card")
                     pageStack.push(Qt.resolvedUrl("PasswordCardPage.qml"), {
@@ -146,7 +148,8 @@ Page {
                     "updated": item.updated || "",
                     "favorite": item.favorite || false,
                     "folderId": item.folderId || "",
-                    "folderName": item.folderName || ""
+                    "folderName": item.folderName || "",
+                    "fields": item.fields || []
                 });
             }
         }

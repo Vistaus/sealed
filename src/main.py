@@ -194,6 +194,14 @@ def login(email: str = "", password: str = "", code: str = "") -> StandardBitwar
 
 
 @dataclass
+class Field:
+    name: str
+    value: str
+    type: int
+    linked_id: Optional[int] = None
+
+
+@dataclass
 class Item:
     id: str
     name: str
@@ -213,6 +221,7 @@ class Item:
     code: str
     folder_id: str
     folder_name: str
+    fields: List[Field]
 
 
 @dataclass
@@ -269,6 +278,9 @@ class SyncItems(Event):
                         code=item.code or "",
                         folder_id=item.folder_id or "",
                         folder_name=item.folder_name or "",
+                        fields=[
+                            Field(name=f.name, value=f.value, type=f.type, linked_id=f.linked_id) for f in item.fields
+                        ],
                     )
                 )
 
@@ -609,6 +621,9 @@ class SyncTrashItems(Event):
                         code=item.code or "",
                         folder_id=item.folder_id or "",
                         folder_name=item.folder_name or "",
+                        fields=[
+                            Field(name=f.name, value=f.value, type=f.type, linked_id=f.linked_id) for f in item.fields
+                        ],
                     )
                 )
 
@@ -802,6 +817,9 @@ class SyncFolderItems(Event):
                         code=item.code or "",
                         folder_id=item.folder_id or "",
                         folder_name=item.folder_name or "",
+                        fields=[
+                            Field(name=f.name, value=f.value, type=f.type, linked_id=f.linked_id) for f in item.fields
+                        ],
                     )
                 )
 
