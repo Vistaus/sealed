@@ -21,7 +21,7 @@ from src.utils import parse_bw_date
 setup(APP_NAME, CRASH_REPORT_URL)
 import secrets
 import string
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from functools import wraps
 from typing import Any, Callable, Dict, List, Optional
 
@@ -221,7 +221,7 @@ class Item:
     code: str
     folder_id: str
     folder_name: str
-    fields: List[Field]
+    fields: List[Field] = field(default_factory=list)
 
 
 @dataclass
